@@ -41,3 +41,16 @@ In this project, Business logic is completely separated from UI
   - Logger.dart
 - main.dart
 - my_env.dart
+
+
+
+
+
+## UI
+
+#### Disclaimer: This project is not focused on UI
+
+| Main Page         | Details Page         |
+| ----------------- | -------------------- |
+| ![](img\main.png) | ![](img\details.png) |
+
