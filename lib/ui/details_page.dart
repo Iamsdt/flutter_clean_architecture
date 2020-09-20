@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_architecture/model.dart';
 
-import 'model.dart';
-
-class DetailsPage extends StatefulWidget {
+class DetailsPage extends StatelessWidget {
   final PostModel model;
 
   DetailsPage(this.model);
 
   @override
-  _DetailsPageState createState() => _DetailsPageState();
-}
-
-class _DetailsPageState extends State<DetailsPage> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.model.title.toUpperCase()),
+        title: Text(model.title.toUpperCase()),
         centerTitle: true,
       ),
       body: Container(
@@ -32,7 +26,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 color: Colors.green,
               ),
               child: Text(
-                widget.model.id.toString(),
+                model.id.toString(),
                 style: TextStyle(
                   color: Colors.red,
                   fontSize: 64.0,
@@ -44,7 +38,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   const EdgeInsets.only(left: 30.0, right: 30.0, top: 20.0),
               alignment: Alignment.center,
               child: Text(
-                widget.model.title.toUpperCase(),
+                model.title.toUpperCase(),
                 style: TextStyle(color: Colors.cyan, fontSize: 16),
                 maxLines: 2,
               ),
@@ -54,7 +48,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   const EdgeInsets.only(left: 30.0, right: 30.0, top: 20.0),
               alignment: Alignment.center,
               child: Text(
-                widget.model.body,
+                model.body,
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 16,
