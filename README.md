@@ -52,5 +52,5 @@ In this project, Business logic is completely separated from UI
 
 | Main Page         | Details Page         |
 | ----------------- | -------------------- |
-| ![](img\main.png) | ![](img\details.png) |
+| <img src='img/main.png' /> | <img src='img/details.png' /> |
 
