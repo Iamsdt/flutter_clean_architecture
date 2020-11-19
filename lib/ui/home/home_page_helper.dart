@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture/model.dart';
+import 'package:flutter_clean_architecture/repo/model/model.dart';
 import 'package:flutter_clean_architecture/ui/details_page.dart';
 import 'package:get/get.dart';
 

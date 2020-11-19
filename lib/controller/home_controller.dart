@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_clean_architecture/controller/helper/data_status.dart';
-import 'package:flutter_clean_architecture/model.dart';
 import 'package:flutter_clean_architecture/repo/layer/api_layer.dart';
+import 'package:flutter_clean_architecture/repo/model/model.dart';
 import 'package:flutter_clean_architecture/repo/network_config.dart';
 import 'package:flutter_clean_architecture/utils/Logger.dart';
 import 'package:get/get.dart';
