@@ -5,9 +5,11 @@ class Logger {
 
   static init({production = false}) {
     isProduction = production;
-    if (isProduction) {
+    if (!isProduction) {
       Fimber.plantTree(FimberTree(useColors: true));
       Fimber.plantTree(DebugBufferTree.elapsed());
+    } else {
+
     }
   }
 
